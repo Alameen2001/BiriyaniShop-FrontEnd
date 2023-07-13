@@ -1,0 +1,22 @@
+<div class="outer_wrapper">
+  <div class="wrapper fadeInDown">
+      <div id="formContent">
+      <!-- Tabs Titles -->
+      <h2 class="active"> Sign In </h2>
+      <a routerLink="register" class="inactive underlineHover">Sign Up</a>
+  
+      <!-- Icon -->
+      <div class="fadeIn first">
+      </div>
+  
+      <!-- Login Form -->
+      <form action="" [formGroup]="logForm"  (ngSubmit)="authenticate()">
+        <input type="text" id="Username" class="fadeIn second" name="Username" placeholder="Username" formControlName="username">
+        <input type="password" id="password" class="fadeIn third" name="Username" placeholder="password" formControlName="password">
+        <input type="submit" class="fadeIn fourth" value="Log In">
+      </form>
+  
+    
+  
+    </div>
+  </div>

@@ -1,0 +1,29 @@
+<div class="outer_wrapper">
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+          <!-- Tabs Titles -->
+    
+          <h2 class="inactive underlineHover" >Sign Up      </h2>
+            <h3>Already a User?<br>Click below to Sign in into your Existing Account</h3> <a href="" routerLink="" class="btn sign_logo inactive underlineHover">Sign in</a>
+    
+     
+    
+      
+          <!-- Icon -->
+          <div class="fadeIn first">
+          </div>
+      
+          <!-- Login Form -->
+          <form action="" [formGroup]="regForm"  (ngSubmit)="register()">
+            <input type="text" id="Username"  class="fadeIn second" name="username" placeholder="enter your name" autocomplete="off" formControlName="username">
+            <input type="email" id="email" class="fadeIn second" name="Email" placeholder="Enter your email" formControlName="email">
+            <input type="password" id="password" class="fadeIn third" name="password" placeholder="enter your password" autocomplete="new-password" formControlName="password">
+            <input type="submit" class="fadeIn fourth" value="Sign Up">
+          </form>
+      
+     
+      
+        </div>
+      </div>
+
+</div>
